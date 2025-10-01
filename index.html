@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Poderoso Chefão - VN Flix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎬 VN Flix</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="principal" id="home">
+            <div class="container-principal">
+
+                <h1 class="titulo-filme">O Poderoso Chefão</h1>
+
+                <div class="conteudo" href="home">
+
+                    <div class="box-imagem">
+                        <img src="imagens/banner1.png" alt="Banner O Poderoso Chefão" class="banner">
+                    </div>
+
+                    <div class="texto">
+                        <div class="box-sinopse">
+                            <h3 class="subtitulo-sinopse">Sinopse</h3>
+                            <p>Considerado um dos maiores clássicos do cinema, <b>O Poderoso Chefão</b> acompanha a
+                                história
+                                da
+                                influente família mafiosa Corleone, liderada por Don Vito Corleone, um homem respeitado
+                                e
+                                temido
+                                no submundo do crime em Nova York. </p>
+                        </div>
+
+                        <div class="box-sinopse">
+                            <h3 class="subtitulo-sinopse">Tudo sobre</h3>
+                            <img src="" alt="">
+                            <p><b>Direção:</b> Francis Ford Coppola </p>
+                            <p><b>Elenco:</b></p> Marlon Brando, Al Pacino, James Caan, Robert Duvall
+                            <p><b>Duração:</b> 2h 55min</p>
+                            <p><b>Gênero:</b> Drama, Crime</p>
+                            <a href="https://www.youtube.com/watch?v=UaVTIH8mujA" target="_blank"
+                                class="btn-trailer">Assista ao trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <section>
+
+        <div class="carousel">
+
+            <input type="radio" name="radio-btn" id="slide1" checked>
+            <input type="radio" name="radio-btn" id="slide2">
+            <input type="radio" name="radio-btn" id="slide3">
+
+            <div class="slides">
+                <div class="slide first">
+                    <img src="imagens/imagem1.png" alt="Primeira imagem do carrossel">
+                </div>
+                <div class="slide">
+                    <img src="imagens/imagem2.png" alt="Segunda imagem do carrossel">
+                </div>
+                <div class="slide">
+                    <img src="imagens/imagem3.png" alt="Terceira imagem do carrossel">
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="slide1" class="nav-btn"></label>
+                <label for="slide2" class="nav-btn"></label>
+                <label for="slide3" class="nav-btn"></label>
+            </div>
+<!-- 
+            <div class="arrows">
+                <label for="slide3" class="arrow-icon arrow-prev prev-1">
+                </label>
+                <label for="slide1" class="arrow-icon arrow-prev prev-2">
+                </label>
+                <label for="slide2" class="arrow-icon arrow-prev prev-3">
+                </label>
+
+                <label for="slide2" class="arrow-icon arrow-next next-1">></label>
+                <label for="slide3" class="arrow-icon arrow-next next-2">></label>
+                <label for="slide1" class="arrow-icon arrow-next next-3">></label>
+            </div> -->
+    </section>
+
+
+
+
+    <main class="principal" id="avaliacoes">
+        <div class="container-principal">
+
+            <h2>Críticas e Avaliações do nosso público</h2>
+
+
+            <div class="lista-avaliacoes-grid">
+
+                <a href="" class="avaliacao-card">
+                    <img src="imagens/capa1.png" alt="Capa O Poderoso Chefão">
+                    <div class="card-info">
+                        <h4>O Poderoso Chefão</h4>
+                        <p class="nota-final">★★★★★</p>
+                        <p class="resumo-critica">"Uma obra-prima absoluta e atemporal, minha favorita. Um filme que
+                            mostra toda a história das famílias da mafia, meu top 1"</p>
+                    </div>
+                </a>
+
+                <a href="" class="avaliacao-card">
+                    <img src="imagens/capa2.png" alt="Capa Outro Filme">
+                    <div class="card-info">
+                        <h4>O Poderoso Chefão 2</h4>
+                        <p class="nota-final">★★★★<span class="vazio">★</span></p>
+                        <p class="resumo-critica">"Obra magnífica, porém com uma historia cansada. Muitos gostam, mas
+                            muitos acham o filme muito enjoativo."</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="form-contato">
+        <div class="container-principal">
+            <h2>Deixe sua Avaliação</h2>
+
+            <form action="#" method="post" class="formulario-estilizado">
+                <div class="topo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" size="30" maxlength="50"
+                        oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" pattern="[A-Za-zã-ý\s]+"><br>
+
+                    <label for="mensagem">Avaliação:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Sua mensagem aqui..."
+                        maxlength="500"></textarea><br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset" class="btn-limpar">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <main class="principal" id="sobre">
+
+        <section class="sobre-nos">
+            <div class="container-principal">
+
+                <h2>Sobre a gente - VN Flix</h2>
+
+                <p>A <b>VN Flix</b> nasceu da paixão pelo cinema e da necessidade de um espaço honesto e focado em
+                    crítica de qualidade. Não somos um serviço de streaming; somos a sua bússola no universo
+                    cinematográfico.</p>
+
+                <p>Nossa missão é ir além do resumo de enredo, oferecendo <u>análises profundas</u> sobre a direção,
+                    roteiro, atuação e impacto cultural dos filmes. Acreditamos que um grande filme merece uma grande
+                    avaliação. De clássicos intocáveis como "O Poderoso Chefão" a novos lançamentos, nosso foco é ajudar
+                    você a encontrar e valorizar as verdadeiras obras-primas.</p>
+
+                <p>Se você busca opiniões sinceras e detalhadas antes de apertar o play, você está no lugar certo.
+                    Agradecemos por fazer parte da comunidade VN Flix!</p>
+
+                <div class="contato-info">
+                    <h3>Entre em Contato</h3>
+                    <p>Dúvidas, sugestões ou parcerias? Envie um e-mail para: <b>vnflix283@gmail.com</b></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p> Avaliação Crítica - Feito por Vinicius Oliveira</p>
+            <nav class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+
+        </div>
+    </footer>
+</body>
+
+</html>
